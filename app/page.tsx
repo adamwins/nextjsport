@@ -4,8 +4,9 @@ import TypedHome from "./components/typed";
 
 
 const navigation = [
-  { name: "About Me", href: "/aboutMe"},
+  { name: "About Me", href: "/aboutme"},
   { name: "Projects", href: "/projects" },
+  { name: "Resume", href: "/resume"},
   { name: "Contact Me", href: "/contact" },
   
 ];
