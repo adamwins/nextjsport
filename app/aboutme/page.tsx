@@ -45,49 +45,41 @@ export default function AboutMe() {
                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                     </div>
                     <h1 className="text-2xl font-bold mb-4 pt-10"> Currently Learning:</h1>
@@ -96,19 +88,16 @@ export default function AboutMe() {
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
                             className="h-20 w-20"
                             whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
                         />
                     </div>
                 </motion.div>
