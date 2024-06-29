@@ -2,27 +2,124 @@
 
 import { Navigation } from "../components/nav";
 import Particles from "../components/particles";
+import { motion } from "framer-motion";
+
+// Define animation variants
+const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1.5 } }
+};
+
+const slideInLeft = {
+    hidden: { x: -100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 1.5 } }
+};
 
 export default function AboutMe() {
     return (
-        <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 text-white flex flex-col items-center">
+        <motion.div
+            className="relative min-h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 text-white flex flex-col items-center"
+            initial="hidden"
+            animate="visible"
+            variants={fadeIn}
+        >
             <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
             <Particles
                 className="absolute inset-0 -z-10"
                 quantity={100}
             />
             <Navigation />
-            <div className="pt-40 container pl-20 ml-10 flex justify-center">
-                <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-10">
+            <div className="pt-40 container pl-20 ml-10 flex flex-col md:flex-row justify-center items-start">
+                <motion.div
+                    className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-10"
+                    variants={slideInLeft}
+                >
                     <h1 className="text-2xl font-bold mb-4">About Me</h1>
                     <p>
                         After discovering coding in high school, I fell in love with the ability to create anything you can imagine through programming. Throughout my time at the University of Hawaii at Manoa, I have been able to hone my problem-solving skills, communication skills, and the ability to work with others. I am excited at the thought of being able to use the technologies I have learned to contribute to meaningful projects.
                     </p>
-                </div>
-                <div className="w-full md:w-1/2 flex justify-center md:justify-center p-5">
-                    <img src="/aboutme.png" alt="Image" className="w-50 h-50 rounded-full shadow" />
-                </div>
+                    
+                    <h1 className="text-2xl font-bold mb-4 pt-10">Skills:</h1>
+                    <div className="w-full flex flex-wrap justify-start items-center gap-4 p-0 m-0">
+                        <motion.img
+                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                    </div>
+                    <h1 className="text-2xl font-bold mb-4 pt-10"> Currently Learning:</h1>
+                    <div className="w-full flex flex-wrap justify-start items-center gap-4 p-0 m-0">
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                            className="h-20 w-20"
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        />
+                    </div>
+                </motion.div>
+                <motion.div
+                    className="w-full md:w-1/2 flex justify-center md:justify-center p-5 md:p-10"
+                    initial={{ scale: 0.8 }}
+                    animate={{ scale: 1, transition: { duration: 1.5 } }}
+                >
+                    <img src="/aboutme.png" alt="Image" className="w-90 h-90 rounded-full shadow" />
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 }
