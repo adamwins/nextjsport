@@ -1,26 +1,26 @@
 "use client";
 
-import Link from "next/link";
 import { Navigation } from "../components/nav";
+import Particles from "../components/particles";
 
 export default function AboutMe() {
     return (
-        <div className="min-h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 text-white flex flex-col justify-center">
+        <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0 text-white flex flex-col items-center">
+            <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+            <Particles
+                className="absolute inset-0 -z-10"
+                quantity={100}
+            />
             <Navigation />
-            <div className="container mx-auto px-4 py-10 flex justify-center items-center">
-                <div className="bg-zinc-800/70 p-8 rounded-lg shadow-lg flex items-center space-x-8">
-                    <div className="flex-1 text-center">
-                        <p className="text-lg mb-4">
-                            Hello! I'm Adam, a passionate developer with experience in full-stack development. I enjoy creating beautiful and functional websites and applications.
-                        </p>
-                        <p className="text-lg mb-4">
-                            With a background in Computer Science, I have a keen eye for detail and a deep understanding of the latest web technologies. I love working on projects that challenge me and allow me to learn new skills.
-                        </p>
-                        <p className="text-lg">
-                            When I'm not coding, you can find me reading, or at the gym. Feel free to <Link href="/contact" className="text-black-400 bold">reach out </Link>.
-                        </p>
-                    </div>
-                    <img src="/aboutme.png" alt="Adam Winfield-Smith" className="rounded-full w-32 h-33 object-cover" />
+            <div className="pt-40 container pl-20 ml-10 flex justify-center">
+                <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-10">
+                    <h1 className="text-2xl font-bold mb-4">About Me</h1>
+                    <p>
+                        After discovering coding in high school, I fell in love with the ability to create anything you can imagine through programming. Throughout my time at the University of Hawaii at Manoa, I have been able to hone my problem-solving skills, communication skills, and the ability to work with others. I am excited at the thought of being able to use the technologies I have learned to contribute to meaningful projects.
+                    </p>
+                </div>
+                <div className="w-full md:w-1/2 flex justify-center md:justify-center p-5">
+                    <img src="/aboutme.png" alt="Image" className="w-50 h-50 rounded-full shadow" />
                 </div>
             </div>
         </div>
