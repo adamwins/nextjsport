@@ -15,6 +15,8 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 - Fix issue with the project page rendering 
 - Update Resume
 - Improve SEO
+- Improve Mobile View 
+- Add link to github for arduino project
 
 ## Credits
 
