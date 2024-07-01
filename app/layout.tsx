@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "adamws",
-    template: "%s | adamws.com",
+    default: "adamwinsmith",
+    template: "%s | adamwinsmith.com",
   },
   description: "Adam Winfield-Smith's Professional Portfolio",
   openGraph: {
-    title: "adamws.com",
+    title: "adamwinsmith.com",
     description:
       "Computer Science Student at the University of Hawaii at Manoa",
-    url: "https://adamws.com",
-    siteName: "adamws.com",
+    url: "https://adamwinsmith.com",
+    siteName: "adamwinsmith.com",
     locale: "en-US",
     type: "website",
   },
