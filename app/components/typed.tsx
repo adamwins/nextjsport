@@ -8,7 +8,7 @@ const TypedHome = () => {
   
     useEffect(() => {
       const typed = new Typed(animate.current, {
-        strings: ['Software Developer', 'Backend Developer', 'Frontend Developer', 'Quick Learner', 'Team Player'],
+        strings: ['Software Developer', 'Backend Developer', 'Frontend Developer', 'Quick Learner', 'Team Player', 'Hard Working', 'Highly Motivated'],
         typeSpeed: 70,
         backSpeed: 70,
         loop: true,
