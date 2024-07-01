@@ -105,7 +105,7 @@ export default function AboutMe() {
                     initial={{ scale: 0.8 }}
                     animate={{ scale: 1, transition: { duration: 1.5 } }}
                 >
-                    <img src="/aboutme.png" alt="Image" className="w-40 h-40 md:w-64 md:h-64 rounded-full shadow" />
+                    <img src="/aboutme.png" alt="Image" className="w-90 h-90 md:w-90 md:h-90 rounded-full shadow" />
                 </motion.div>
             </div>
         </motion.div>
