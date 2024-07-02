@@ -35,7 +35,7 @@ export default function AboutMe() {
                 >
                     <h1 className="text-xl md:text-2xl font-bold mb-4">About Me</h1>
                     <p className="text-sm md:text-base">
-                        After discovering coding in high school, I fell in love with the ability to create anything you can imagine through programming. Throughout my time at the University of Hawaii at Manoa, I have been able to hone my problem-solving skills, communication skills, and the ability to work with others. I am excited at the thought of being able to use the technologies I have learned to contribute to meaningful projects.
+                        Hi, I'm Adam Winfield-Smith, a student studying computer science at the University of Hawaii at Manoa. After discovering coding in high school, I fell in love with the ability to create anything you can imagine through programming. Throughout my time at the University of Hawaii at Manoa, I have been able to hone my problem-solving skills, communication skills, and the ability to work with others. I am excited at the thought of being able to use the technologies I have learned to contribute to meaningful projects.
                     </p>
                     
                     <h1 className="text-xl md:text-2xl font-bold mb-4 pt-6 md:pt-10">Skills:</h1>
