@@ -12,7 +12,6 @@ const navigation = [
   { name: 'Contact Me', href: '/contact' },
 ];
 
-//Detects if user is on mobile device
 function isMobile() {
   return /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop|webOS|BlackBerry/i.test(navigator.userAgent);
 }
@@ -41,7 +40,7 @@ export default function Home() {
       </nav>
       <div className="hidden w-screen h-px md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
+        className={`absolute inset-0 -z-10 ${!isMobileDevice ? 'animate-fade-in' : ''}`}
         quantity={isMobileDevice ? 50 : 100}
       />
       <h1
