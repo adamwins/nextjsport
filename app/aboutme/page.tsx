@@ -10,12 +10,12 @@ const AboutMe = () => {
 
     const fadeIn = {
         hidden: { opacity: 0 },
-        visible: { opacity: 1, transition: { duration: isMobile ? 0.8 : 1.5 } }
+        visible: { opacity: 1, transition: { duration: isMobile ? 1 : 1 } }
     };
 
     const slideInLeft = {
         hidden: { x: isMobile ? 0 : -100, opacity: 0 },
-        visible: { x: 0, opacity: 1, transition: { duration: isMobile ? 0.8 : 1.5 } }
+        visible: { x: 0, opacity: 1, transition: { duration: isMobile ? 1 : 1 } }
     };
 
     return (
