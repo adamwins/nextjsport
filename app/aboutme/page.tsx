@@ -10,12 +10,12 @@ const AboutMe = () => {
 
     const fadeIn = {
         hidden: { opacity: 0 },
-        visible: { opacity: 1, ...(isMobile ? {} : { transition: { duration: 1 } }) }
+        visible: isMobile ? { opacity: 1 } : { opacity: 1, transition: { duration: 1 } }
     };
     
     const slideInLeft = {
         hidden: { x: isMobile ? 0 : -100, opacity: 0 },
-        visible: { x: 0, opacity: 1, ...(isMobile ? {} : { transition: { duration: 1 } }) }
+        visible: { x: 0, opacity: 1, transition: { duration: 1 } }
     };
 
     return (
@@ -80,9 +80,6 @@ const AboutMe = () => {
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={{ scale: 1.1 }}
                         />
-                    </div>
-                    <h1 className="text-xl md:text-2xl font-bold mb-4 pt-6 md:pt-10">Currently Learning:</h1>
-                    <div className="w-full flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 p-0 m-0">
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
@@ -103,7 +100,7 @@ const AboutMe = () => {
                 <motion.div
                     className="w-full md:w-1/2 flex justify-center p-4 md:p-10"
                     initial={{ scale: 0.8 }}
-                    animate={{ scale: 1, ...(isMobile ? {} : { transition: { duration: 1.5 } }) }}
+                    animate={ isMobile ? {} : { scale: 1, transition: { duration: 1.5 } }}
                 >
                     <img src="/aboutme.png" alt="Image" className="w-90 h-90 md:w-90 md:h-90 rounded-full shadow" />
                 </motion.div>
@@ -113,5 +110,3 @@ const AboutMe = () => {
 }
 
 export default AboutMe;
-
-
