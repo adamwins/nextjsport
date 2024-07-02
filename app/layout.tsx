@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "adamwinsmith.com",
     description:
-      "Computer Science Student at the University of Hawaii at Manoa",
+      "Adam Winfield-Smith's Professional Portfolio",
     url: "https://adamwinsmith.com",
     siteName: "adamwinsmith.com",
     locale: "en-US",
