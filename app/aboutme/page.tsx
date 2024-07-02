@@ -103,7 +103,7 @@ const AboutMe = () => {
                 <motion.div
                     className="w-full md:w-1/2 flex justify-center p-4 md:p-10"
                     initial={{ scale: 0.8 }}
-                    animate={{ scale: 1, transition: { duration: isMobile ? 0.8 : 1.5 } }}
+                    animate={{ scale: 1, ...(isMobile ? {} : { transition: { duration: 1.5 } }) }}
                 >
                     <img src="/aboutme.png" alt="Image" className="w-90 h-90 md:w-90 md:h-90 rounded-full shadow" />
                 </motion.div>
