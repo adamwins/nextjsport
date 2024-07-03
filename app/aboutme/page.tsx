@@ -70,12 +70,12 @@ const AboutMe = () => {
                     <h1 className="text-xl md:text-2xl font-bold mb-4 pt-6 md:pt-10">Skills:</h1>
                     <div className="w-full flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 p-0 m-0">
                         <motion.img
-                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" 
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
                         <motion.img
-                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
@@ -90,12 +90,12 @@ const AboutMe = () => {
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
                         <motion.img
-                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
                         <motion.img
-                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
@@ -105,7 +105,7 @@ const AboutMe = () => {
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
                         <motion.img
-                            src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
