@@ -11,36 +11,29 @@ const fadeIn = {
 };
 
 const AboutMe: React.FC = () => {
-    const useClient = (): boolean => {
-        const [isMobile, setIsMobile] = useState(false);
-
-        useEffect(() => {
-            const checkIfMobile = () => {
-                setIsMobile(window.matchMedia('(max-width: 768px)').matches);
-            };
-
-            checkIfMobile();
-
-            const resizeListener = () => {
-                checkIfMobile();
-            };
-
-            window.addEventListener('resize', resizeListener);
-
-            return () => {
-                window.removeEventListener('resize', resizeListener);
-            };
-        }, []);
-
-        return isMobile;
-    };
-
-    const isMobile = useClient();
-    const [hasMounted, setHasMounted] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
-        setHasMounted(true);
+        const checkIfMobile = () => {
+            setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+        };
+
+        
+        checkIfMobile();
+
+        const resizeListener = () => {
+            checkIfMobile();
+        };
+
+        window.addEventListener('resize', resizeListener);
+
+        return () => {
+            window.removeEventListener('resize', resizeListener);
+        };
+    }, []);
+
+    useEffect(() => {
         preloadImages();
     }, []);
 
@@ -88,14 +81,14 @@ const AboutMe: React.FC = () => {
                 <motion.div
                     className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-10"
                     initial="hidden"
-                    animate={hasMounted ? "visible" : "hidden"}
+                    animate={!isMobile ? "visible" : "hidden"}
                     variants={fadeIn}
                 >
                     <h1 className="text-xl md:text-2xl font-bold mb-4">About Me</h1>
                     <p className="text-sm md:text-base">
                         Hi, I'm Adam Winfield-Smith, a student studying computer science at the University of Hawaii at Manoa. After discovering coding in high school, I fell in love with the ability to create anything you can imagine through programming. Throughout my time at the University of Hawaii at Manoa, I have honed my problem-solving skills, communication skills, and the ability to work with others. I am excited at the prospect of using the technologies I have learned to contribute to meaningful projects.
                     </p>
-                    
+
                     <h1 className="text-xl md:text-2xl font-bold mb-4 pt-6 md:pt-10">Skills:</h1>
                     <div className="w-full flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 p-0 m-0">
                         {images.slice(0, 8).map((src, index) => (
@@ -140,10 +133,10 @@ const AboutMe: React.FC = () => {
                     </div>
                 </motion.div>
                 <motion.div
-                    className="w-full md:w-1/2 flex justify-center md:justify-center p-4 md:p-10"
-                    initial={!isMobile ? { scale: 0.8 } : {}}
-                    animate={!isMobile ? { scale: 1, transition: { duration: 1.5, delay: 0.5 } } : {}}
-                >
+                         className="w-full md:w-1/2 flex justify-center md:justify-center p-4 md:p-10"
+                         initial={{ opacity: 0, scale: isMobile ? 0.8 : 1 }}
+                         animate={{ opacity: 1, scale: isMobile ? 0.8 : 1, transition: { duration: 1.5, delay: 0.2 } }}
+                    >
                     <div
                         className="w-90 h-90 md:w-90 md:h-90 rounded-full shadow"
                         style={{
