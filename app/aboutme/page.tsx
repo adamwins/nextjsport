@@ -123,6 +123,11 @@ const AboutMe = () => {
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
                         />
                         <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" 
+                            className="h-16 md:h-20 w-16 md:w-20"
+                            whileHover={!isMobile ? { scale: 1.1 } : {}}
+                        />
+                        <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobile ? { scale: 1.1 } : {}}
