@@ -9,7 +9,8 @@ const navigation = [
   { name: 'About Me', href: '/aboutme' },
   { name: 'Projects', href: '/projects' },
   { name: 'Resume', href: '/resume' },
-  { name: 'Contact Me', href: '/contact' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'Contact Me', href: '/contact'}
 ];
 
 function isMobile() {
