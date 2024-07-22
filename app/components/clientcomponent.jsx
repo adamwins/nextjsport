@@ -102,6 +102,11 @@ const AboutMeClient = () => {
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobileDevice ? { scale: 1.1 } : {}}
                         />
+                        <motion.img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" 
+                            className="h-16 md:h-20 w-16 md:w-20"
+                            whileHover={!isMobileDevice ? { scale: 1.1 } : {}}
+                        />
                     </div>
                 </motion.div>
                 <motion.div
