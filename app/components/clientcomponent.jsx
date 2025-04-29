@@ -84,9 +84,6 @@ const AboutMeClient = () => {
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobileDevice ? { scale: 1.1 } : {}}
                         />
-                    </div>
-                    <h1 className="text-xl md:text-2xl font-bold mb-4 pt-6 md:pt-10">Currently Learning:</h1>
-                    <div className="w-full flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 p-0 m-0">
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                             className="h-16 md:h-20 w-16 md:w-20"
@@ -97,6 +94,9 @@ const AboutMeClient = () => {
                             className="h-16 md:h-20 w-16 md:w-20"
                             whileHover={!isMobileDevice ? { scale: 1.1 } : {}}
                         />
+                    </div>
+                    <h1 className="text-xl md:text-2xl font-bold mb-4 pt-6 md:pt-10">Currently Learning:</h1>
+                    <div className="w-full flex flex-wrap justify-center md:justify-start items-center gap-2 md:gap-4 p-0 m-0">
                         <motion.img
                             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" 
                             className="h-16 md:h-20 w-16 md:w-20"
